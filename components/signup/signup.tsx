@@ -176,7 +176,7 @@ const Signup = ({onCustomizeHeader}: SignupProps) => {
             });
         }
 
-        if (isLicensed && enableSignUpWithOpenId) {
+        if (enableSignUpWithOpenId) {
             externalLoginOptions.push({
                 id: 'openid',
                 url: `${Client4.getOAuthRoute()}/openid/signup${search}`,
