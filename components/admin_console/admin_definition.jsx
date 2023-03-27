@@ -5165,7 +5165,6 @@ const AdminDefinition = {
             title: t('admin.sidebar.openid'),
             title_default: 'OpenID Connect',
             isHidden: it.any(
-                it.all(it.not(it.licensedForFeature('OpenId')), it.not(it.cloudLicensed)),
                 it.not(it.userHasReadPermissionOnResource(RESOURCE_KEYS.AUTHENTICATION.OPENID)),
             ),
             schema: {
